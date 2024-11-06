@@ -49,6 +49,9 @@ client.on('messageCreate', message => {
     } else if (message.content === '!gm') {
         const gifPath = getRandomGif('gm');
         message.channel.send({ files: [gifPath] }).catch(console.error);
+    } else if (message.content === '!trump') {
+        const gifPath = getRandomGif('trump');
+        message.channel.send({ files: [gifPath] }).catch(console.error);
     }
 });
 
